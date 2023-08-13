@@ -42,7 +42,7 @@ public:
         for(int i = 0; i < n; i++){
             long long res = 0;
             long long left = i - nsl[i], right = nsr[i] - i;
-            res += left*right*(long long)arr[i];
+            res += left*right*(1ll)*arr[i];
             ans = (ans + res)%mod;
         }
         return ans%mod;
